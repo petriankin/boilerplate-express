@@ -5,7 +5,7 @@ app.get("/", function (req, res) {
  return res.sendFile(__dirname + "/views/index.html");
 })
 app.get("/json", function (req, res) {
- return res.json('{"message": "Hello json"}');
+ return res.json({message: "Hello json"});
 })
 app.use("/public", express.static(__dirname + "/public"));
 
